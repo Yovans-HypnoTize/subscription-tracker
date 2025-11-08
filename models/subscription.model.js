@@ -57,7 +57,7 @@ const subscriptionSchema = new Schema(
     },
     renewalDate: {
       type: Date,
-      required: true,
+      required: false,
       validate: {
         validator: function (value) {
           return value > this.startDate;
